@@ -15,7 +15,12 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
-
+/**
+ * Please define the broad functionality of class
+ * here.
+ * @author avneesh
+ *
+ */
 public class FrontScreen extends Activity implements OnClickListener {
 	ImageButton ibOpenFile, ibSubscribe, ibLibrary, ibList, grid;
 
@@ -30,6 +35,7 @@ public class FrontScreen extends Activity implements OnClickListener {
 
 	private void setButtonBackground() {
 		// TODO Auto-generated method stub
+		//Get this path from properties file
 		String pathName = "/mnt/sdcard/Download/toc-cover-winter-travel.jpg";
 		Bitmap bmp = BitmapFactory.decodeFile(pathName);
 		if(bmp != null){
@@ -52,10 +58,12 @@ public class FrontScreen extends Activity implements OnClickListener {
 	}
 
 	@Override
+	//Refactor variable names. Names should be descriptive 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		int cust = v.getId();
 		if (cust == ibOpenFile.getId()) {
+			//TODO Remove this
 			File f = new File(
 					"/mnt/sdcard/Download/Final PDF FOR WEB 26th NOV 12.pdf");
 			Uri uri = Uri.parse(f.getAbsolutePath());

@@ -51,8 +51,13 @@ public class Footer extends Activity implements OnClickListener {
 	/**
 	 * This method is called when any button from footer is clicked.
 	 */
+	//Create message enum/xml/properties file to get message values
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
+		/**
+		 * If one button is supposed to do one activity at a time, either use
+		 * switch or if/else
+		 */
 		int cust = v.getId();
 		if (cust == blibrary.getId()) {
 			Toast.makeText(getApplicationContext(),"Library Button clicked", Toast.LENGTH_SHORT).show();

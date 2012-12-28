@@ -18,7 +18,7 @@ public class SigninDialog extends Activity implements OnClickListener{
 	EditText etuname, etpass;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub 
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.dialog_signin);

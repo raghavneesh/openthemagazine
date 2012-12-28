@@ -30,6 +30,7 @@ public class GridMagazinesActivity extends Footer {
 	protected File mDirectory = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/Android/data/com.pdfviewer.openthemagazine/files");
 	protected File[] mFiles = mDirectory.listFiles(new FilenameFilter() {
 		public boolean accept(File file, String name) {
+			//OR query should be used here, instead of writing in separate lines
 			if (name.toLowerCase().endsWith(".pdf"))
 				return true;
 			if (name.toLowerCase().endsWith(".xps"))
